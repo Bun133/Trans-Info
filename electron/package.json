@@ -1,0 +1,11 @@
+{
+  "name": "trains-electron",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "run": "electron ./nuxt_out"
+  },
+  "dependencies": {
+    "electron": "^14.0.1"
+  }
+}

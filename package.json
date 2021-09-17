@@ -1,0 +1,13 @@
+{
+  "name": "Trans-Info",
+  "version": "1.0.0",
+  "scripts": {
+    "prestart": "npm run generate --prefix ./nuxt && del-cli --force ./electron/nuxt_out/* && cpx ./nuxt/dist/**/* ./electron/nuxt_out",
+    "start": "npm run run -- prefix ./electron",
+    "dev": "npm run dev --prefix ./nuxt"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "del-cli": "^4.0.1"
+  }
+}
